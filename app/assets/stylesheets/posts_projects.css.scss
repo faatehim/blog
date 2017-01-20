@@ -1,33 +1,26 @@
-#post_wrapper {
-  padding: 3em 1;
+#posts_wrapper {
+  padding: 3em 0;
   .post {
-       text-align:center;
-       padding: 1em;
-      .date {
-         font-size:.9em;
-         margin:0;
-
+    text-align: center;
+    .date {
+      font-size: .9em;
+      margin: 0;
+    }
+    h2 {
+      margin: 0;
+      font-size: 2em;
+      text-transform: uppercase;
+      a {
+        text-decoration: none;
+        color: $dark;
+        &:hover {
+          color: $highlight;
+        }
       }
-        h2 {
-          margin:1;
-          font-size: 2em;
-          text-transform:uppercase;
-          margin:0;
-        }
-        a{
-           text-decoration:none;  
-           color:$dark;
-           &:hover {
-               color:$highlight;
-           }
-
-        }
-
-        hr {
-           margin: 3em auto;
-        }
-
-
+    }
+    hr {
+      margin: 3em auto;
+    }
   }
 }
 
@@ -44,9 +37,9 @@
     h1 {
       margin: 0;
     }
-    hr {
-      margin: 2em auto;
-    }
+  }
+  hr {
+    margin: 3em auto;
   }
 }
 
@@ -58,24 +51,39 @@
     font-weight: 700;
     text-transform: uppercase;
     color: $dark;
-    font-size : .8em;
+    font-size: .8em;
   }
   i {
     color: $dark;
-    padding: 1 em 1.5em;
+    padding: 1em 1.5em;
+    &:hover {
+      color: $highlight;
+      cursor: pointer;
+    }
   }
 }
 
+#admin_links {
+  border-top: 1px solid $border;
+  border-bottom: 1px solid $border;
+  text-align: center;
+  padding: 1em 0;
+  margin: 3em 0;
+  a {
+    color: $light;
+    margin: 0 1em;
+    font-weight: 700;
+    font-size: .8em;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
 
-
-// - - - - - - pagination
-
-
-
+// - - - - - - Pagination
 
 .pagination:before,
 .pagination:after {
-  content: "  ";
+  content: " ";
   display: table;
 }
 
@@ -87,37 +95,33 @@
   text-align: center;
   margin: 0 0 3em 0;
   a, .previous_page, .current, .next_page {
-      padding: .75em 1em;
-      margin: 0 .5em;
-      border-radius: .15em;
-      line-height: 20px;
-      text-decoration: none;
-      background:$white;
-      font-weight:200;
-      font-size: .7em;
-      font-style:normal;
-      color: $dark;
-      font-size: 110%;
-      &:hover {
-        background: $highlight;
-        color: $white;
-      }
+    padding: .75em 1em;
+    margin: 0 .5em;
+    border-radius: .15em;
+    line-height: 20px;
+    text-decoration: none;
+    background: $white;
+    font-weight: 700;
+    font-size: .7em;
+    font-style: normal;
+    color: $dark;
+    &:hover {
+      background: $highlight;
+      color: $white;
+    }
   }
-
   .current {
     background: $highlight;
-    color:$white;
+    color: $white;
   }
   .disabled {
-     color: #C0C0C0
-     &:hover {
-        color: #C0C0C0;
-        background:$white;
-     }
+    color: #C0C0C0;
+    &:hover {
+      color: #C0C0C0;
+      background: $white;
+    }
   }
 }
-
-
 
 
 
