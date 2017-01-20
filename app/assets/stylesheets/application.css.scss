@@ -124,7 +124,7 @@ hr {
 	text-align: center;
 	border-bottom: 1px solid $border;
 	padding: 3em 0;
-	font-size: 1.5rem;
+	font-size: 1rem;
 	text-transform: uppercase;
 }
 
@@ -148,7 +148,6 @@ hr {
 		}
 	}
 }
-
 
 input[type="text"], input[type="email"], input[type="password"], textarea {
 	width: 100%;
@@ -178,6 +177,19 @@ input[type="submit"], .button {
 	}
 }
 
+.project_button {
+	background: $highlight;
+	color: $white;
+	text-decoration: none;
+	padding: 1em 2em;
+}
+
+.button_wrapper {
+	margin: 4em 0 0 0;
+	text-align: center;
+}
+
 @import 'posts_projects.css.scss';
+@import 'welcome.css.scss'
 
 
