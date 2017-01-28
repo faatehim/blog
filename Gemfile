@@ -19,7 +19,7 @@ group :development, :test do
 end
 
 group :devlopment do
-	gem 'sqlite3'
+	gem 'pg'
 end
 
 
