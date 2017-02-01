@@ -1,29 +1,25 @@
 <div class="wrapper wrapper_padding clearfix">
-    <div class="col-1 about homepage_content ">
-  <h2> About  </h2>
-  <hr>
-   <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+  <div class="col-1 about homepage_content">
+    <h2>About</h2>
+    <hr>
+    <p>Kinfolk lomo lyft, +1 portland etsy pinterest man braid. Organic hella scenester, mlkshk lo-fi viral vaporware post-ironic food truck helvetica pork belly. PBRB migas thundercats, copper mug meggings occupy activated charcoal drinking vinegar ugh hella tote bag tattooed. Echo park health goth lyft shoreditch blue bottle bespoke slow-carb, helvetica godard street art roof party viral irony. Hella blue bottle pug, single-origin coffee chartreuse seitan chambray cliche fanny pack literally tumblr enamel pin bushwick bespoke. Scenester umami cronut sustainable, single-origin coffee ugh tacos helvetica hell of cardigan. Wolf blue bottle PBRB, etsy tilde slow-carb master cleanse cold-pressed fashion axe beard intelligentsia. </p>
+
   </div>
-
-    <div class="col-2 homepage_content">
-		<h2>Stuff I've Written</h2>
-		<hr>
-		<% @posts.each do |post| %>
-			<h3><a href="#"><%= link_to post.title, post %></a></h3>
-			<p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
-		<% end %>
+  <div class="col-2 homepage_content">
+    <h2>Stuff I've Written</h2>
+    <hr>
+    <% @posts.each do |post| %>
+      <h3><a href="#"><%= link_to post.title, post %></a></h3>
+      <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
+    <% end %>
+  </div>
+  <div class="col-3 homepage_content">
+    <h2>Stuff I've Built</h2>
+    <hr>
+    <% @projects.each do |project| %>
+      <h3><a href="#"><%= link_to project.title, project %></a></h3>
+      <p class="date"><%= project.created_at.strftime("%A, %b %d") %></p>
+    <% end %>
+  </div>
 </div>
-    <div class="col-3 homepage_content">
-
-<h2> Projects I have built:<h2>
-<hr>
-<h3> Forkable </h3>
-<p class="date">Tue Dec 27</p>
-<h3> Medium </h3>
-<p class="date">Sunday December 25</p>
-<h3> Bold</h3>
-<p class="date">Friday December 23</p>
-
-    </div>
-
-</div>
+Contact GitHub API Training Shop Blog About
